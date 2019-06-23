@@ -20,19 +20,19 @@
 
 -- dump key_name (序列号name 输出序列号后的值)
 
-> dump name //"\x00\azhucong\b\x00\af\xf9\x05\x84\xa5\xc2\x91"
+* dump name //"\x00\azhucong\b\x00\af\xf9\x05\x84\xa5\xc2\x91"
 
 -- exists key_name (判断key是否存在)
 
-> exists name //1
+* exists name //1
 
 -- expire key_name time_in_seconds (设置有效时间过期后则删除 时间是S 对已经存在的key进行操作)
 
-> expire name 10 //1
+* expire name 10 //1
 
 -- expireat key_name time_in_unix_timestamp (指定过期时间戳)
-> set name tnb
-> expireat name 1551341040 //1
+* set name tnb
+* expireat name 1551341040 //1
 
 -- keys pattern (查找所有符合给定模式 pattern 的 key)
 > keys * //(返回所有键名) 输出 name
