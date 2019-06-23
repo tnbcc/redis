@@ -12,11 +12,11 @@
 
 ### key 操作
 -- set key_name value (设置指定的key值 如果key值已经存储其他的值 set会覆盖旧值,且无视类型) 
-> set name zhucong
+* set name zhucong
 
 -- get key_name (获取指定key值 如果key存在返回nil 如果key存储值不是字符串 返回一个错误)
 
-> get name //输出:zhucong
+* get name //输出:zhucong
 
 -- dump key_name (序列号name 输出序列号后的值)
 
