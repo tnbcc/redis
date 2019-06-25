@@ -78,3 +78,11 @@
 
 #### type key_name (返回key的存储值的类型)
 * type name //string
+
+### 字符串 操作
+
+`> flushdb`
+<br>`> set title "my name is zhucong"`
+<br>`> get title // 输出：my name is zhucong`
+
+#### getrange key_name start end (用于获取存储在指定key中字符串的子字符串，字符串的截取范围又start 和 end 两个偏移亮决定)
